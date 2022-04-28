@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import DjangoClasses
+from Classes.classApp.models import DjangoClasses
 
 # Register your models here.
 

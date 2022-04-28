@@ -9,13 +9,14 @@ class DjangoClasses(models.Model):
 
     objects = models.Manager()
 
-
     def __str__(self):
         return "{}".format(self.title)
 
 
-    math = DjangoClasses.objects.create(title="Math 101", courseNumber=1, instructorName="Dan", duration=35)
+math = DjangoClasses.objects.create(title="Math 101", courseNumber=1, instructorName="Dan", duration=35)
 
-    history = DjangoClasses.objects.create(title="History 101", courseNumber=2, instructorName="Been", duration=35)
+history = DjangoClasses.objects.create(title="History 101", courseNumber=2, instructorName="Been", duration=35)
 
-    english = DjangoClasses.objects.create(title="English 101", courseNumber=3, instructorName="Wilson", duration=35)
+english = DjangoClasses.objects.create(title="English 101", courseNumber=3, instructorName="Wilson", duration=35)
+
+object.save(math, history, english)
