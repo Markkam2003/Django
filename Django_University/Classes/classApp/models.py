@@ -14,8 +14,8 @@ class DjangoClasses(models.Model):
 
 
 math = DjangoClasses.object.create(title="Math 101", course_number=1, instructor_name="Dan", duration=35)
-
+math.save()
 history = DjangoClasses.object.create(title="History 101", course_number=2, instructor_name="Been", duration=35)
-
+history.save()
 english = DjangoClasses.object.create(title="English 101", course_number=3, instructor_name="Wilson", duration=35)
-
+english.save()
