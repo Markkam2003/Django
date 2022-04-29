@@ -19,4 +19,3 @@ history = DjangoClasses.object.create(title="History 101", course_number=2, inst
 
 english = DjangoClasses.object.create(title="English 101", course_number=3, instructor_name="Wilson", duration=35)
 
-object.save(math, history, english)
